@@ -1,12 +1,421 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Bot, Users, Trophy, Heart, Mail, Phone, MapPin, Wrench, Lightbulb, Target, Star, ArrowRight, Play } from "lucide-react";
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-robotics-blue-50">
+      {/* Navigation */}
+      <nav className="bg-white shadow-sm sticky top-0 z-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-between items-center h-16">
+            <div className="flex items-center space-x-2">
+              <Bot className="h-8 w-8 text-robotics-blue-500" />
+              <span className="text-xl font-bold text-robotics-blue-800">Reach for Robotics</span>
+            </div>
+            <div className="hidden md:flex space-x-8">
+              <a href="#about" className="text-robotics-blue-700 hover:text-robotics-blue-500 transition-colors">About</a>
+              <a href="#programs" className="text-robotics-blue-700 hover:text-robotics-blue-500 transition-colors">Programs</a>
+              <a href="#impact" className="text-robotics-blue-700 hover:text-robotics-blue-500 transition-colors">Impact</a>
+              <a href="#get-involved" className="text-robotics-blue-700 hover:text-robotics-blue-500 transition-colors">Get Involved</a>
+              <a href="#contact" className="text-robotics-blue-700 hover:text-robotics-blue-500 transition-colors">Contact</a>
+            </div>
+            <Button className="bg-robotics-blue-500 hover:bg-robotics-blue-600 text-white">
+              Donate Now
+            </Button>
+          </div>
+        </div>
+      </nav>
+
+      {/* Hero Section */}
+      <section className="relative bg-gradient-to-br from-robotics-blue-500 via-robotics-blue-400 to-robotics-blue-300 text-white overflow-hidden">
+        <div className="absolute inset-0 bg-black opacity-10"></div>
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="animate-fade-in">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+                Inspiring the Next Generation of 
+                <span className="bg-gradient-to-r from-robotics-blue-100 to-white bg-clip-text text-transparent"> Innovators</span>
+              </h1>
+              <p className="text-xl text-robotics-blue-100 mb-8 leading-relaxed">
+                Through hands-on robotics education, we're building tomorrow's problem solvers, engineers, and leaders. Join us in making STEM accessible to every child.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Button size="lg" className="bg-white text-robotics-blue-600 hover:bg-robotics-blue-50 px-8 py-3">
+                  <Play className="mr-2 h-5 w-5" />
+                  Watch Our Story
+                </Button>
+                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-robotics-blue-600 px-8 py-3">
+                  <ArrowRight className="mr-2 h-5 w-5" />
+                  Explore Programs
+                </Button>
+              </div>
+            </div>
+            <div className="relative">
+              <div className="bg-white bg-opacity-10 backdrop-blur-sm rounded-3xl p-8 animate-float">
+                <Bot className="h-32 w-32 text-white mx-auto mb-4" />
+                <div className="text-center">
+                  <h3 className="text-2xl font-bold mb-2">10,000+</h3>
+                  <p className="text-robotics-blue-100">Students Reached</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* About Section */}
+      <section id="about" className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-robotics-blue-800 mb-4">About Reach for Robotics</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              We believe every child deserves the opportunity to explore, create, and innovate through robotics and STEM education.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 mb-16">
+            <Card className="border-robotics-blue-200 hover:shadow-lg transition-shadow">
+              <CardHeader className="text-center">
+                <Target className="h-12 w-12 text-robotics-blue-500 mx-auto mb-4" />
+                <CardTitle className="text-robotics-blue-800">Our Mission</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600 text-center">
+                  To democratize robotics education and inspire diverse communities to pursue STEM careers through hands-on learning experiences.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-robotics-blue-200 hover:shadow-lg transition-shadow">
+              <CardHeader className="text-center">
+                <Lightbulb className="h-12 w-12 text-robotics-blue-500 mx-auto mb-4" />
+                <CardTitle className="text-robotics-blue-800">Our Vision</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600 text-center">
+                  A world where every student has access to quality robotics education, fostering innovation and problem-solving skills.
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-robotics-blue-200 hover:shadow-lg transition-shadow">
+              <CardHeader className="text-center">
+                <Heart className="h-12 w-12 text-robotics-blue-500 mx-auto mb-4" />
+                <CardTitle className="text-robotics-blue-800">Our Values</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-gray-600 text-center">
+                  Inclusion, innovation, collaboration, and empowerment drive everything we do in our educational programs.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Programs Section */}
+      <section id="programs" className="py-20 bg-gradient-to-br from-robotics-blue-50 to-robotics-blue-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-robotics-blue-800 mb-4">Our Programs</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              From beginner workshops to advanced competitions, we offer comprehensive robotics education for all skill levels.
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-8">
+            <Card className="bg-white hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+              <CardHeader>
+                <div className="flex items-center justify-between mb-4">
+                  <Bot className="h-10 w-10 text-robotics-blue-500" />
+                  <Badge className="bg-robotics-blue-100 text-robotics-blue-700">Ages 6-10</Badge>
+                </div>
+                <CardTitle className="text-robotics-blue-800">Robot Explorers</CardTitle>
+                <CardDescription>
+                  Introduction to robotics through fun, hands-on activities and basic programming concepts.
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-2 text-gray-600">
+                  <li>• Basic robot assembly</li>
+                  <li>• Visual programming</li>
+                  <li>• Problem-solving games</li>
+                  <li>• Team collaboration</li>
+                </ul>
+                <Button className="w-full mt-4 bg-robotics-blue-500 hover:bg-robotics-blue-600">
+                  Learn More
+                </Button>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-white hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+              <CardHeader>
+                <div className="flex items-center justify-between mb-4">
+                  <Wrench className="h-10 w-10 text-robotics-blue-400" />
+                  <Badge className="bg-robotics-blue-100 text-robotics-blue-700">Ages 11-14</Badge>
+                </div>
+                <CardTitle className="text-robotics-blue-800">Tech Builders</CardTitle>
+                <CardDescription>
+                  Advanced robotics programming and engineering design challenges for middle school students.
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-2 text-gray-600">
+                  <li>• Arduino programming</li>
+                  <li>• Sensor integration</li>
+                  <li>• Design thinking</li>
+                  <li>• Competition prep</li>
+                </ul>
+                <Button className="w-full mt-4 bg-robotics-blue-400 hover:bg-robotics-blue-500">
+                  Learn More
+                </Button>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-white hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+              <CardHeader>
+                <div className="flex items-center justify-between mb-4">
+                  <Trophy className="h-10 w-10 text-robotics-blue-300" />
+                  <Badge className="bg-robotics-blue-100 text-robotics-blue-700">Ages 15-18</Badge>
+                </div>
+                <CardTitle className="text-robotics-blue-800">Innovation League</CardTitle>
+                <CardDescription>
+                  Competitive robotics teams focusing on real-world challenges and advanced engineering.
+                </CardDescription>
+              </CardHeader>
+              <CardContent>
+                <ul className="space-y-2 text-gray-600">
+                  <li>• Advanced programming</li>
+                  <li>• CAD design</li>
+                  <li>• Project management</li>
+                  <li>• Mentorship opportunities</li>
+                </ul>
+                <Button className="w-full mt-4 bg-robotics-blue-300 hover:bg-robotics-blue-400">
+                  Learn More
+                </Button>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Impact Section */}
+      <section id="impact" className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-robotics-blue-800 mb-4">Our Impact</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              See how we're making a difference in communities and shaping the future of STEM education.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
+            <div className="text-center">
+              <div className="bg-gradient-to-br from-robotics-blue-500 to-robotics-blue-400 text-white rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
+                <Users className="h-10 w-10" />
+              </div>
+              <h3 className="text-3xl font-bold text-robotics-blue-800 mb-2">10,000+</h3>
+              <p className="text-gray-600">Students Served</p>
+            </div>
+
+            <div className="text-center">
+              <div className="bg-gradient-to-br from-robotics-blue-400 to-robotics-blue-300 text-white rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
+                <Trophy className="h-10 w-10" />
+              </div>
+              <h3 className="text-3xl font-bold text-robotics-blue-800 mb-2">150+</h3>
+              <p className="text-gray-600">Competition Wins</p>
+            </div>
+
+            <div className="text-center">
+              <div className="bg-gradient-to-br from-robotics-blue-300 to-robotics-blue-200 text-white rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
+                <Bot className="h-10 w-10" />
+              </div>
+              <h3 className="text-3xl font-bold text-robotics-blue-800 mb-2">500+</h3>
+              <p className="text-gray-600">Robots Built</p>
+            </div>
+
+            <div className="text-center">
+              <div className="bg-gradient-to-br from-robotics-blue-200 to-robotics-blue-100 text-robotics-blue-800 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
+                <Star className="h-10 w-10" />
+              </div>
+              <h3 className="text-3xl font-bold text-robotics-blue-800 mb-2">95%</h3>
+              <p className="text-gray-600">Student Satisfaction</p>
+            </div>
+          </div>
+
+          <Card className="bg-gradient-to-r from-robotics-blue-500 to-robotics-blue-400 text-white">
+            <CardContent className="p-8">
+              <div className="text-center">
+                <h3 className="text-2xl font-bold mb-4">Success Story</h3>
+                <p className="text-lg italic mb-4">
+                  "Reach for Robotics changed my life. I went from knowing nothing about programming to leading my school's robotics team to nationals. Now I'm studying computer engineering at MIT!"
+                </p>
+                <p className="text-robotics-blue-100">- Sarah Chen, Alumni & MIT Student</p>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
+      </section>
+
+      {/* Get Involved Section */}
+      <section id="get-involved" className="py-20 bg-gradient-to-br from-robotics-blue-50 to-robotics-blue-100">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-robotics-blue-800 mb-4">Get Involved</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Join our mission to make robotics education accessible to every child. There are many ways to support our cause.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <Card className="bg-white hover:shadow-lg transition-shadow">
+              <CardHeader className="text-center">
+                <Heart className="h-12 w-12 text-robotics-blue-500 mx-auto mb-4" />
+                <CardTitle className="text-robotics-blue-800">Volunteer</CardTitle>
+              </CardHeader>
+              <CardContent className="text-center">
+                <p className="text-gray-600 mb-6">
+                  Share your skills and passion for technology with the next generation of innovators.
+                </p>
+                <Button className="bg-robotics-blue-500 hover:bg-robotics-blue-600 w-full">
+                  Become a Volunteer
+                </Button>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-white hover:shadow-lg transition-shadow">
+              <CardHeader className="text-center">
+                <Users className="h-12 w-12 text-robotics-blue-500 mx-auto mb-4" />
+                <CardTitle className="text-robotics-blue-800">Partner</CardTitle>
+              </CardHeader>
+              <CardContent className="text-center">
+                <p className="text-gray-600 mb-6">
+                  Partner with us to bring robotics education to underserved communities and schools.
+                </p>
+                <Button className="bg-robotics-blue-500 hover:bg-robotics-blue-600 w-full">
+                  Explore Partnerships
+                </Button>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-white hover:shadow-lg transition-shadow">
+              <CardHeader className="text-center">
+                <Star className="h-12 w-12 text-robotics-blue-500 mx-auto mb-4" />
+                <CardTitle className="text-robotics-blue-800">Donate</CardTitle>
+              </CardHeader>
+              <CardContent className="text-center">
+                <p className="text-gray-600 mb-6">
+                  Your donation helps us provide robotics kits, training, and programs to students in need.
+                </p>
+                <Button className="bg-gradient-to-r from-robotics-blue-500 to-robotics-blue-400 hover:from-robotics-blue-600 hover:to-robotics-blue-500 w-full text-white">
+                  Make a Donation
+                </Button>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section id="contact" className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-robotics-blue-800 mb-4">Contact Us</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Ready to get started or have questions? We'd love to hear from you!
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-3 gap-8">
+            <Card className="border-robotics-blue-200">
+              <CardHeader className="text-center">
+                <Mail className="h-8 w-8 text-robotics-blue-500 mx-auto mb-2" />
+                <CardTitle className="text-robotics-blue-800">Email Us</CardTitle>
+              </CardHeader>
+              <CardContent className="text-center">
+                <p className="text-gray-600">info@reachforrobotics.org</p>
+                <p className="text-gray-600">programs@reachforrobotics.org</p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-robotics-blue-200">
+              <CardHeader className="text-center">
+                <Phone className="h-8 w-8 text-robotics-blue-500 mx-auto mb-2" />
+                <CardTitle className="text-robotics-blue-800">Call Us</CardTitle>
+              </CardHeader>
+              <CardContent className="text-center">
+                <p className="text-gray-600">(555) 123-ROBOT</p>
+                <p className="text-gray-600">Mon-Fri 9AM-5PM</p>
+              </CardContent>
+            </Card>
+
+            <Card className="border-robotics-blue-200">
+              <CardHeader className="text-center">
+                <MapPin className="h-8 w-8 text-robotics-blue-500 mx-auto mb-2" />
+                <CardTitle className="text-robotics-blue-800">Visit Us</CardTitle>
+              </CardHeader>
+              <CardContent className="text-center">
+                <p className="text-gray-600">123 Innovation Drive</p>
+                <p className="text-gray-600">Tech City, TC 12345</p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-robotics-blue-800 text-white py-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-4 gap-8">
+            <div>
+              <div className="flex items-center space-x-2 mb-4">
+                <Bot className="h-8 w-8" />
+                <span className="text-xl font-bold">Reach for Robotics</span>
+              </div>
+              <p className="text-robotics-blue-100">
+                Inspiring the next generation of innovators through hands-on robotics education.
+              </p>
+            </div>
+            
+            <div>
+              <h4 className="font-semibold mb-4">Programs</h4>
+              <ul className="space-y-2 text-robotics-blue-100">
+                <li>Robot Explorers</li>
+                <li>Tech Builders</li>
+                <li>Innovation League</li>
+                <li>Summer Camps</li>
+              </ul>
+            </div>
+            
+            <div>
+              <h4 className="font-semibold mb-4">Get Involved</h4>
+              <ul className="space-y-2 text-robotics-blue-100">
+                <li>Volunteer</li>
+                <li>Partner with Us</li>
+                <li>Donate</li>
+                <li>Sponsor</li>
+              </ul>
+            </div>
+            
+            <div>
+              <h4 className="font-semibold mb-4">Connect</h4>
+              <ul className="space-y-2 text-robotics-blue-100">
+                <li>Newsletter</li>
+                <li>Social Media</li>
+                <li>Events</li>
+                <li>Blog</li>
+              </ul>
+            </div>
+          </div>
+          
+          <div className="border-t border-robotics-blue-700 mt-8 pt-8 text-center text-robotics-blue-100">
+            <p>&copy; 2024 Reach for Robotics. All rights reserved. | Non-profit 501(c)(3) Organization</p>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };
