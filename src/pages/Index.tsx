@@ -43,22 +43,12 @@ const Index = () => {
                 Through hands-on robotics education, we're building tomorrow's problem solvers, engineers, and leaders. Join us in making STEM accessible to every child.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="bg-white text-robotics-blue-600 hover:bg-robotics-blue-50 px-8 py-3">
-                  <Play className="mr-2 h-5 w-5" />
-                  Watch Our Story
-                </Button>
-                <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-robotics-blue-600 px-8 py-3">
-                  <ArrowRight className="mr-2 h-5 w-5" />
-                  Explore Programs
-                </Button>
               </div>
             </div>
             <div className="relative">
               <div className="bg-white bg-opacity-10 backdrop-blur-sm rounded-3xl p-8 animate-float">
                 <Bot className="h-32 w-32 text-white mx-auto mb-4" />
                 <div className="text-center">
-                  <h3 className="text-2xl font-bold mb-2">10,000+</h3>
-                  <p className="text-robotics-blue-100">Students Reached</p>
                 </div>
               </div>
             </div>
@@ -72,7 +62,7 @@ const Index = () => {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-robotics-blue-800 mb-4">About Reach for Robotics</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              We believe every child deserves the opportunity to explore, create, and innovate through robotics and STEM education.
+              We believe every child deserves the opportunity to explore and create through robotics and STEM education.
             </p>
           </div>
 
@@ -84,7 +74,7 @@ const Index = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 text-center">
-                  To democratize robotics education and inspire diverse communities to pursue STEM careers through hands-on learning experiences.
+                  Provide resources and hands on workshops for communities to learn about and attain a passion for STEM and robotics
                 </p>
               </CardContent>
             </Card>
@@ -96,7 +86,7 @@ const Index = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 text-center">
-                  A world where every student has access to quality robotics education, fostering innovation and problem-solving skills.
+                  Our biggest aim and vision for the future is to create a world where robotics and STEM are accessible for all communities, regardless of circumstance.
                 </p>
               </CardContent>
             </Card>
@@ -108,7 +98,7 @@ const Index = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 text-center">
-                  Inclusion, innovation, collaboration, and empowerment drive everything we do in our educational programs.
+                  Our programs are created with the intent to foster a sense of curiosity and collaboration within everyone involved.
                 </p>
               </CardContent>
             </Card>
@@ -122,7 +112,7 @@ const Index = () => {
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-robotics-blue-800 mb-4">Our Programs</h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              From beginner workshops to advanced competitions, we offer comprehensive robotics education for all skill levels.
+              From beginner to intermediate and advanced workshops, we offer comprehensive robotics education for all skill levels.
             </p>
           </div>
 
@@ -202,63 +192,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Impact Section */}
-      <section id="impact" className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-robotics-blue-800 mb-4">Our Impact</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              See how we're making a difference in communities and shaping the future of STEM education.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
-            <div className="text-center">
-              <div className="bg-gradient-to-br from-robotics-blue-500 to-robotics-blue-400 text-white rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
-                <Users className="h-10 w-10" />
-              </div>
-              <h3 className="text-3xl font-bold text-robotics-blue-800 mb-2">10,000+</h3>
-              <p className="text-gray-600">Students Served</p>
-            </div>
-
-            <div className="text-center">
-              <div className="bg-gradient-to-br from-robotics-blue-400 to-robotics-blue-300 text-white rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
-                <Trophy className="h-10 w-10" />
-              </div>
-              <h3 className="text-3xl font-bold text-robotics-blue-800 mb-2">150+</h3>
-              <p className="text-gray-600">Competition Wins</p>
-            </div>
-
-            <div className="text-center">
-              <div className="bg-gradient-to-br from-robotics-blue-300 to-robotics-blue-200 text-white rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
-                <Bot className="h-10 w-10" />
-              </div>
-              <h3 className="text-3xl font-bold text-robotics-blue-800 mb-2">500+</h3>
-              <p className="text-gray-600">Robots Built</p>
-            </div>
-
-            <div className="text-center">
-              <div className="bg-gradient-to-br from-robotics-blue-200 to-robotics-blue-100 text-robotics-blue-800 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
-                <Star className="h-10 w-10" />
-              </div>
-              <h3 className="text-3xl font-bold text-robotics-blue-800 mb-2">95%</h3>
-              <p className="text-gray-600">Student Satisfaction</p>
-            </div>
-          </div>
-
-          <Card className="bg-gradient-to-r from-robotics-blue-500 to-robotics-blue-400 text-white">
-            <CardContent className="p-8">
-              <div className="text-center">
-                <h3 className="text-2xl font-bold mb-4">Success Story</h3>
-                <p className="text-lg italic mb-4">
-                  "Reach for Robotics changed my life. I went from knowing nothing about programming to leading my school's robotics team to nationals. Now I'm studying computer engineering at MIT!"
-                </p>
-                <p className="text-robotics-blue-100">- Sarah Chen, Alumni & MIT Student</p>
-              </div>
-            </CardContent>
-          </Card>
-        </div>
-      </section>
+    
 
       {/* Get Involved Section */}
       <section id="get-involved" className="py-20 bg-gradient-to-br from-robotics-blue-50 to-robotics-blue-100">
@@ -280,9 +214,6 @@ const Index = () => {
                 <p className="text-gray-600 mb-6">
                   Share your skills and passion for technology with the next generation of innovators.
                 </p>
-                <Button className="bg-robotics-blue-500 hover:bg-robotics-blue-600 w-full">
-                  Become a Volunteer
-                </Button>
               </CardContent>
             </Card>
 
@@ -295,9 +226,7 @@ const Index = () => {
                 <p className="text-gray-600 mb-6">
                   Partner with us to bring robotics education to underserved communities and schools.
                 </p>
-                <Button className="bg-robotics-blue-500 hover:bg-robotics-blue-600 w-full">
-                  Explore Partnerships
-                </Button>
+
               </CardContent>
             </Card>
 
@@ -310,9 +239,7 @@ const Index = () => {
                 <p className="text-gray-600 mb-6">
                   Your donation helps us provide robotics kits, training, and programs to students in need.
                 </p>
-                <Button className="bg-gradient-to-r from-robotics-blue-500 to-robotics-blue-400 hover:from-robotics-blue-600 hover:to-robotics-blue-500 w-full text-white">
-                  Make a Donation
-                </Button>
+
               </CardContent>
             </Card>
           </div>
@@ -340,31 +267,6 @@ const Index = () => {
                 <p className="text-gray-600">programs@reachforrobotics.org</p>
               </CardContent>
             </Card>
-
-            <Card className="border-robotics-blue-200">
-              <CardHeader className="text-center">
-                <Phone className="h-8 w-8 text-robotics-blue-500 mx-auto mb-2" />
-                <CardTitle className="text-robotics-blue-800">Call Us</CardTitle>
-              </CardHeader>
-              <CardContent className="text-center">
-                <p className="text-gray-600">(555) 123-ROBOT</p>
-                <p className="text-gray-600">Mon-Fri 9AM-5PM</p>
-              </CardContent>
-            </Card>
-
-            <Card className="border-robotics-blue-200">
-              <CardHeader className="text-center">
-                <MapPin className="h-8 w-8 text-robotics-blue-500 mx-auto mb-2" />
-                <CardTitle className="text-robotics-blue-800">Visit Us</CardTitle>
-              </CardHeader>
-              <CardContent className="text-center">
-                <p className="text-gray-600">123 Innovation Drive</p>
-                <p className="text-gray-600">Tech City, TC 12345</p>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
 
       {/* Footer */}
       <footer className="bg-robotics-blue-800 text-white py-12">
